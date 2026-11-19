@@ -14,7 +14,7 @@
 <style>
 :root{--ivory:#faf6ec;--paper:#fffdf6;--ink:#1e3324;--green:#23432b;--soft:#6e6a5a;--gold:#a8874a;--gold2:#cdb37a}
 *{box-sizing:border-box}
-html{background:var(--ivory)}
+html{background:var(--ivory);overflow-x:hidden}
 body{margin:0;color:var(--ink);font-family:"Cormorant Garamond",Georgia,serif;font-size:18px;
 background:var(--ivory) radial-gradient(circle at 50% 0,#fffaf0 0,transparent 60%)}
 a{color:inherit}
@@ -42,7 +42,7 @@ h1{font-weight:400;font-size:31px;letter-spacing:1px;line-height:1.05;margin:0}
 h2{font-weight:400;font-size:26px;margin:0;line-height:1.1}
 .sec{margin-top:13px}
 .hint{font-style:italic;color:var(--soft);font-size:15px;margin:2px 0 10px}
-.lib{display:grid;grid-auto-flow:column;grid-auto-columns:max-content;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -22px;padding:4px 22px 10px;scrollbar-width:thin;scrollbar-color:var(--gold2) transparent}
+.lib{display:grid;grid-auto-flow:column;grid-auto-columns:max-content;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -18px;padding:4px 18px 10px;scrollbar-width:thin;scrollbar-color:var(--gold2) transparent}
 .card{scroll-snap-align:center;text-decoration:none}
 .card img{height:var(--ch,300px);width:auto;aspect-ratio:4/5;object-fit:contain;box-sizing:border-box;display:block;padding:9px;background:#fff;border:1px solid var(--gold2);box-shadow:0 10px 24px rgba(60,45,20,.12);transition:transform .3s,box-shadow .3s}
 .card span{display:block;font-style:italic;font-size:17px;margin-top:6px}
