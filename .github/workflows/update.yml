@@ -1,7 +1,5 @@
 name: Update Etsy gallery
 on:
-  schedule:
-    - cron: "0 5 * * *"
   workflow_dispatch:
 permissions:
   contents: write
