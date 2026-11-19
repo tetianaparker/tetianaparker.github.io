@@ -12,20 +12,20 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Cormorant+SC:wght@500&display=swap" rel="stylesheet">
 <style>
-:root{--ivory:#faf6ec;--paper:#fffdf6;--ink:#1e3324;--green:#23432b;--soft:#6e6a5a;--gold:#a8874a;--gold2:#cdb37a}
+:root{--ivory:#faf6ec;--paper:#fffdf6;--ink:#394a2a;--green:#394a2a;--soft:#6e6a5a;--gold:#a8874a;--gold2:#cdb37a}
 *{box-sizing:border-box}
 html{background:var(--ivory);overflow-x:hidden}
 body{margin:0;color:var(--ink);font-family:"Cormorant Garamond",Georgia,serif;font-size:18px;
 background:var(--ivory) radial-gradient(circle at 50% 0,#fffaf0 0,transparent 60%)}
 a{color:inherit}
 .page{max-width:520px;margin:0 auto;padding:16px 18px 14px;text-align:center}
-.frame{border:1px solid var(--gold);padding:6px}
+.frame{border:1px solid var(--green);padding:6px}
 .frame>div{border:1px solid var(--gold2)}
 .banner{height:66px;background:url(img/banner.jpg) center/cover}
-.avatar{width:78px;height:78px;margin:-39px auto 0;position:relative;border-radius:50%;padding:5px;background:var(--ivory);border:1px solid var(--gold)}
+.avatar{width:78px;height:78px;margin:-39px auto 0;position:relative;border-radius:50%;padding:5px;background:var(--ivory);border:1px solid var(--green)}
 .avatar img{width:100%;height:100%;border-radius:50%;object-fit:cover;display:block;border:1px solid var(--gold2)}
 .eyebrow{font-family:"Cormorant SC",serif;letter-spacing:4px;font-size:13px;color:var(--gold);margin:6px 0 2px}
-h1{font-weight:400;font-size:31px;letter-spacing:1px;line-height:1.05;margin:0}
+h1{color:var(--green);font-weight:400;font-size:31px;letter-spacing:1px;line-height:1.05;margin:0}
 .orn{display:flex;align-items:center;justify-content:center;gap:12px;color:var(--gold);margin:4px 0 5px}
 .orn:before,.orn:after{content:"";height:1px;width:70px;background:linear-gradient(90deg,transparent,var(--gold))}
 .orn:after{transform:scaleX(-1)}
@@ -34,32 +34,32 @@ h1{font-weight:400;font-size:31px;letter-spacing:1px;line-height:1.05;margin:0}
 .shop div{border:1px solid rgba(205,179,122,.7);padding:5px 10px}
 .shop b{display:block;font-family:"Cormorant SC",serif;font-weight:500;letter-spacing:4px;font-size:15px}
 .shop i{display:block;color:var(--gold2);font-size:13px;margin-top:1px}
-.shop:hover{background:#2b5034}
+.shop:hover{background:#44582f}
 .links{display:flex;justify-content:center;align-items:center;margin:10px 0 0;font-family:"Cormorant SC",serif;font-weight:500;font-size:13px;letter-spacing:2.6px}
-.links a{color:var(--ink);text-decoration:none;padding:2px 0 3px;border-bottom:1px solid var(--gold2);transition:color .3s,border-color .3s}
+.links a{color:var(--green);text-decoration:none;padding:2px 0 3px;border-bottom:1px solid rgba(57,74,42,.55);transition:color .3s,border-color .3s}
 .links a:hover{color:var(--gold);border-color:var(--gold)}
-.links i{width:1px;height:13px;background:var(--gold2);margin:0 16px}
+.links i{width:1px;height:13px;background:var(--gold);margin:0 16px}
 .icons{display:flex;justify-content:center;gap:24px;margin:12px 0 0}
-.icons a{width:24px;height:24px;display:flex;align-items:center;justify-content:center;color:var(--ink);transition:color .3s}
+.icons a{width:24px;height:24px;display:flex;align-items:center;justify-content:center;color:var(--green);transition:color .3s}
 .icons svg{width:16px;height:16px;fill:currentColor}
 .icons a:hover{color:var(--gold)}
-h2{font-family:"Cormorant SC",serif;font-weight:500;font-size:19px;letter-spacing:6px;margin:0;line-height:1.1;color:var(--ink)}
+h2{font-family:"Cormorant SC",serif;font-weight:500;font-size:19px;letter-spacing:6px;margin:0;line-height:1.1;color:var(--green)}
 .sec{margin-top:20px}
 .hint{font-style:italic;color:var(--soft);font-size:14px;letter-spacing:.3px;margin:3px 0 9px}
 .lib{display:grid;grid-auto-flow:column;grid-auto-columns:max-content;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -18px;padding:4px 18px 10px;scrollbar-width:none}
 .lib::-webkit-scrollbar{display:none}
 .card{scroll-snap-align:center;text-decoration:none}
-.card img{height:var(--ch,300px);width:auto;aspect-ratio:4/5;object-fit:contain;box-sizing:border-box;display:block;padding:6px;background:#fff;border:1px solid var(--gold2);box-shadow:0 1px 2px rgba(60,45,20,.05),0 8px 22px rgba(60,45,20,.07);transition:transform .5s,box-shadow .5s}
-.card span{display:block;font-family:"Cormorant SC",serif;font-weight:500;font-size:13px;letter-spacing:3px;color:var(--ink);margin-top:9px}
+.card img{height:var(--ch,300px);width:auto;aspect-ratio:4/5;object-fit:contain;box-sizing:border-box;display:block;padding:6px;background:#fff;border:1px solid rgba(57,74,42,.35);box-shadow:0 1px 2px rgba(60,45,20,.05),0 8px 22px rgba(60,45,20,.07);transition:transform .5s,box-shadow .5s}
+.card span{display:block;font-family:"Cormorant SC",serif;font-weight:500;font-size:13px;letter-spacing:3px;color:var(--green);margin-top:9px}
 .card:hover img{transform:translateY(-2px);box-shadow:0 1px 2px rgba(60,45,20,.05),0 14px 30px rgba(60,45,20,.11)}
 .libwrap{position:relative}
-.arr{display:none;position:absolute;top:calc(50% - 40px);width:46px;height:46px;border-radius:50%;border:1px solid var(--gold2);background:transparent;color:var(--ink);font:300 26px/1 "Cormorant Garamond",serif;align-items:center;justify-content:center;cursor:pointer;z-index:2;transition:color .3s,border-color .3s}
+.arr{display:none;position:absolute;top:calc(50% - 40px);width:46px;height:46px;border-radius:50%;border:1px solid rgba(57,74,42,.4);background:transparent;color:var(--green);font:300 26px/1 "Cormorant Garamond",serif;align-items:center;justify-content:center;cursor:pointer;z-index:2;transition:color .3s,border-color .3s}
 .arr:hover{color:var(--gold);border-color:var(--gold)}
 .arr.l{left:-64px}.arr.r{right:-64px}
 footer p{margin:0 0 3px}
 footer .est{color:var(--gold);letter-spacing:5px;font-size:13px}
-footer .orig{font-family:"Cormorant Garamond",serif;font-style:italic;letter-spacing:0;font-size:16px;color:var(--ink);margin-bottom:4px}
-footer{margin-top:9px;padding-top:6px;border-top:1px solid var(--gold2);font-family:"Cormorant SC",serif;letter-spacing:1.6px;font-size:12px;color:var(--soft)}
+footer .orig{font-family:"Cormorant Garamond",serif;font-style:italic;letter-spacing:0;font-size:16px;color:var(--green);margin-bottom:4px}
+footer{margin-top:9px;padding-top:6px;border-top:1px solid rgba(57,74,42,.6);font-family:"Cormorant SC",serif;letter-spacing:1.6px;font-size:12px;color:var(--soft)}
 @media(min-width:900px){
 .links{font-size:15px;letter-spacing:5px;margin-top:14px}.links i{margin:0 30px}
 .page{max-width:min(1080px,calc(100vw - 200px));padding-top:16px}
@@ -82,6 +82,13 @@ footer{display:flex;justify-content:center;gap:14px;align-items:baseline;letter-
 footer p{margin:0}
 footer p+p:before{content:"·";margin-right:14px;color:var(--gold)}
 }
+.lb{position:fixed;inset:0;z-index:50;display:flex;flex-direction:column;align-items:center;justify-content:center;background:rgba(250,246,236,.97);opacity:0;visibility:hidden;transition:opacity .35s,visibility .35s}
+.lb.on{opacity:1;visibility:visible}
+.lb img{max-width:min(calc(100vw - 72px),900px);max-height:calc(100vh - 120px);width:auto;height:auto;display:block;border:1px solid var(--gold2);box-shadow:0 18px 40px rgba(38,51,29,.16)}
+.lb p{font-family:"Cormorant SC",serif;font-weight:500;letter-spacing:4px;font-size:15px;color:var(--green);margin:16px 0 0}
+.lb button{position:absolute;border:0;background:transparent;color:var(--green);font:300 34px/1 "Cormorant Garamond",serif;cursor:pointer;padding:10px 14px;transition:color .3s}
+.lb button:hover{color:var(--gold)}
+.lb .x{top:8px;right:10px}.lb .pv{left:0;top:calc(50% - 30px)}.lb .nx{right:0;top:calc(50% - 30px)}
 </style>
 </head>
 <body>
@@ -110,14 +117,14 @@ footer p+p:before{content:"·";margin-right:14px;color:var(--gold)}
 <button class="arr l" aria-label="Previous">&lsaquo;</button>
 <div class="lib">
 <!--GALLERY-->
-<a class="card" href="https://www.etsy.com/listing/4620540158" target="_blank" rel="noopener"><img src="https://i.etsystatic.com/68325894/r/il/bbfcd2/8885992064/il_570xN.8885992064_7wvt.jpg" alt="Buttercup" loading="lazy"><span>Buttercup</span></a>
-<a class="card" href="https://www.etsy.com/listing/4619740787" target="_blank" rel="noopener"><img src="https://i.etsystatic.com/68325894/r/il/04f10a/8933767285/il_570xN.8933767285_rbpd.jpg" alt="Lavender" loading="lazy"><span>Lavender</span></a>
-<a class="card" href="https://www.etsy.com/listing/4618901072" target="_blank" rel="noopener"><img src="https://i.etsystatic.com/68325894/r/il/0b6031/8885991534/il_570xN.8885991534_23ab.jpg" alt="Cornflower" loading="lazy"><span>Cornflower</span></a>
-<a class="card" href="https://www.etsy.com/listing/4618069933" target="_blank" rel="noopener"><img src="https://i.etsystatic.com/68325894/r/il/d9d5cf/8933767655/il_570xN.8933767655_2evf.jpg" alt="Gerbera Daisy" loading="lazy"><span>Gerbera Daisy</span></a>
-<a class="card" href="https://www.etsy.com/listing/4617435225" target="_blank" rel="noopener"><img src="https://i.etsystatic.com/68325894/r/il/3875f0/8933767951/il_570xN.8933767951_ay3m.jpg" alt="Oxeye Daisy" loading="lazy"><span>Oxeye Daisy</span></a>
-<a class="card" href="https://www.etsy.com/listing/4616456196" target="_blank" rel="noopener"><img src="https://i.etsystatic.com/68325894/r/il/1e06a3/8885993504/il_570xN.8885993504_48ju.jpg" alt="Iceland Poppy" loading="lazy"><span>Iceland Poppy</span></a>
-<a class="card" href="https://www.etsy.com/listing/4615722540" target="_blank" rel="noopener"><img src="https://i.etsystatic.com/68325894/r/il/80bbf4/8933768657/il_570xN.8933768657_8cmj.jpg" alt="California Poppy" loading="lazy"><span>California Poppy</span></a>
-<a class="card" href="https://www.etsy.com/listing/4615315078" target="_blank" rel="noopener"><img src="https://i.etsystatic.com/68325894/r/il/9df8e2/8885994278/il_570xN.8885994278_d0un.jpg" alt="Red Corn Poppy" loading="lazy"><span>Red Corn Poppy</span></a>
+<a class="card" href="https://i.etsystatic.com/68325894/r/il/bbfcd2/8885992064/il_1140xN.8885992064_7wvt.jpg"><img src="https://i.etsystatic.com/68325894/r/il/bbfcd2/8885992064/il_570xN.8885992064_7wvt.jpg" alt="Buttercup" loading="lazy"><span>Buttercup</span></a>
+<a class="card" href="https://i.etsystatic.com/68325894/r/il/04f10a/8933767285/il_1140xN.8933767285_rbpd.jpg"><img src="https://i.etsystatic.com/68325894/r/il/04f10a/8933767285/il_570xN.8933767285_rbpd.jpg" alt="Lavender" loading="lazy"><span>Lavender</span></a>
+<a class="card" href="https://i.etsystatic.com/68325894/r/il/0b6031/8885991534/il_1140xN.8885991534_23ab.jpg"><img src="https://i.etsystatic.com/68325894/r/il/0b6031/8885991534/il_570xN.8885991534_23ab.jpg" alt="Cornflower" loading="lazy"><span>Cornflower</span></a>
+<a class="card" href="https://i.etsystatic.com/68325894/r/il/d9d5cf/8933767655/il_1140xN.8933767655_2evf.jpg"><img src="https://i.etsystatic.com/68325894/r/il/d9d5cf/8933767655/il_570xN.8933767655_2evf.jpg" alt="Gerbera Daisy" loading="lazy"><span>Gerbera Daisy</span></a>
+<a class="card" href="https://i.etsystatic.com/68325894/r/il/3875f0/8933767951/il_1140xN.8933767951_ay3m.jpg"><img src="https://i.etsystatic.com/68325894/r/il/3875f0/8933767951/il_570xN.8933767951_ay3m.jpg" alt="Oxeye Daisy" loading="lazy"><span>Oxeye Daisy</span></a>
+<a class="card" href="https://i.etsystatic.com/68325894/r/il/1e06a3/8885993504/il_1140xN.8885993504_48ju.jpg"><img src="https://i.etsystatic.com/68325894/r/il/1e06a3/8885993504/il_570xN.8885993504_48ju.jpg" alt="Iceland Poppy" loading="lazy"><span>Iceland Poppy</span></a>
+<a class="card" href="https://i.etsystatic.com/68325894/r/il/80bbf4/8933768657/il_1140xN.8933768657_8cmj.jpg"><img src="https://i.etsystatic.com/68325894/r/il/80bbf4/8933768657/il_570xN.8933768657_8cmj.jpg" alt="California Poppy" loading="lazy"><span>California Poppy</span></a>
+<a class="card" href="https://i.etsystatic.com/68325894/r/il/9df8e2/8885994278/il_1140xN.8885994278_d0un.jpg"><img src="https://i.etsystatic.com/68325894/r/il/9df8e2/8885994278/il_570xN.8885994278_d0un.jpg" alt="Red Corn Poppy" loading="lazy"><span>Red Corn Poppy</span></a>
 <!--/GALLERY-->
 </div>
 <button class="arr r" aria-label="Next">&rsaquo;</button>
@@ -126,6 +133,7 @@ footer p+p:before{content:"·";margin-right:14px;color:var(--gold)}
 
 <footer><p class="est">Est. 2026</p><p class="orig">Every piece is a hand-painted original</p><p class="copy">&copy; 2026 Tetiana Parker &middot; All rights reserved</p></footer>
 </div>
+<div class="lb" id="lb" aria-hidden="true"><button class="x" aria-label="Close">&times;</button><button class="pv" aria-label="Previous">&lsaquo;</button><img alt=""><p></p><button class="nx" aria-label="Next">&rsaquo;</button></div>
 <script>
 function fit(){var r=document.documentElement,h=300;r.style.setProperty('--ch',h+'px');
 var pg=document.querySelector('.page'),cs=getComputedStyle(document.body),over=pg.offsetHeight+parseFloat(cs.marginTop)+parseFloat(cs.marginBottom)-innerHeight;h=Math.round(Math.min(innerWidth<900?400:520,Math.max(innerWidth<900?150:150,h-over-2)));r.style.setProperty('--ch',h+'px')}
@@ -135,6 +143,17 @@ var l=w.querySelector('.lib');
 w.querySelector('.arr.l').onclick=function(){l.scrollBy({left:-l.clientWidth*.75,behavior:'smooth'})};
 w.querySelector('.arr.r').onclick=function(){l.scrollBy({left:l.clientWidth*.75,behavior:'smooth'})};
 });
+(function(){var lb=document.getElementById('lb'),im=lb.querySelector('img'),cap=lb.querySelector('p'),cs=[].slice.call(document.querySelectorAll('.card')),i=0,x0=null;
+function show(k){i=(k+cs.length)%cs.length;var c=cs[i];im.src=c.getAttribute('href');im.alt=c.querySelector('img').alt;cap.textContent=c.querySelector('span').textContent}
+function open(k){show(k);lb.classList.add('on');lb.setAttribute('aria-hidden','false')}
+function close(){lb.classList.remove('on');lb.setAttribute('aria-hidden','true')}
+cs.forEach(function(c,k){c.addEventListener('click',function(e){e.preventDefault();open(k)})});
+lb.querySelector('.x').onclick=close;lb.querySelector('.pv').onclick=function(e){e.stopPropagation();show(i-1)};lb.querySelector('.nx').onclick=function(e){e.stopPropagation();show(i+1)};
+lb.addEventListener('click',function(e){if(e.target===lb)close()});
+addEventListener('keydown',function(e){if(!lb.classList.contains('on'))return;if(e.key==='Escape')close();if(e.key==='ArrowLeft')show(i-1);if(e.key==='ArrowRight')show(i+1)});
+lb.addEventListener('touchstart',function(e){x0=e.touches[0].clientX},{passive:true});
+lb.addEventListener('touchend',function(e){if(x0===null)return;var d=e.changedTouches[0].clientX-x0;if(Math.abs(d)>45)show(d<0?i+1:i-1);x0=null});
+})();
 </script>
 </body>
 </html>

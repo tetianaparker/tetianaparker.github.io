@@ -26,9 +26,9 @@ for i in range(0, len(listings), 100):
 
 def card(l, cls):
     name = html.escape(l["title"].split(",")[0].replace(" Original Painting", ""))
-    url = f"https://www.etsy.com/listing/{l['listing_id']}"
     img = images[l["listing_id"]]
-    return f'<a class="card" href="{url}" target="_blank" rel="noopener"><img src="{img}" alt="{name}" loading="lazy"><span>{name}</span></a>'
+    big = img.replace("il_570xN", "il_1140xN")
+    return f'<a class="card" href="{big}"><img src="{img}" alt="{name}" loading="lazy"><span>{name}</span></a>'
 
 listings = [l for l in listings if l["listing_id"] in images]
 library = [l for l in listings if "custom" not in l["title"].lower()]
