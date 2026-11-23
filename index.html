@@ -93,6 +93,35 @@ footer p+p:before{content:"·";margin-right:14px;color:var(--gold)}
 .card img.cv{padding:0;background:none;border:0;box-shadow:none;aspect-ratio:auto;width:auto}
 .card:hover img.cv{box-shadow:none}
 .lb img{border:0;box-shadow:none}
+
+/*layout-sync: identical on index.html and commissions.html*/
+.orn{margin:3px 0 4px}
+.intro{margin:0;height:44px;line-height:22px;overflow:hidden}
+.intro .sep{display:none}
+.links{margin-top:8px}.icons{margin-top:8px}
+.sec{margin-top:12px}.hint{margin:2px 0 6px}
+.lib{gap:5px;padding-bottom:6px}
+.card span{margin-top:6px}
+.card img{aspect-ratio:4/5;width:auto}
+footer{margin-top:6px;padding-top:5px}
+footer .est,footer .orig{display:inline}footer .orig:before{content:"·";margin:0 8px;color:var(--gold);font-style:normal}
+h1{line-height:34px}
+.page{padding-bottom:4px}
+@media(min-width:900px){
+.intro{height:24px;line-height:24px}.intro .sep{display:inline}
+.links{margin-top:10px}.icons{margin-top:10px}
+.sec{margin-top:16px}
+.lib{gap:6px}
+h1{line-height:38px}
+footer .orig:before{content:none}
+.page{max-width:min(1320px,calc(100vw - 150px))}
+.banner{height:clamp(56px,7vh,100px)}
+.avatar{width:84px;height:84px;margin-top:-42px}
+.eyebrow{margin-top:4px}
+.sec h2,.sec .hint{display:inline-block;vertical-align:baseline;margin:0 0 8px}
+.sec .hint:before{content:"·";margin:0 12px;color:var(--gold);font-style:normal}
+h1{line-height:36px}
+}
 </style>
 </head>
 <body>
@@ -102,7 +131,7 @@ footer p+p:before{content:"·";margin-right:14px;color:var(--gold)}
 <p class="eyebrow">Botanical Originals</p>
 <h1>Tetiana Parker</h1>
 <div class="orn">&#10086;</div>
-<p class="lede">Flowers hand-painted with Posca markers,<br class="mbr"> each one an original, painted to order.</p>
+<p class="lede intro">Flowers hand-painted with Posca markers,<br class="mbr"> each one an original, painted to order.</p>
 
 
 <nav class="links"><a href="https://tetianaparker.etsy.com" target="_blank" rel="noopener">Shop</a><i></i><a href="/commissions">Commissions</a><i></i><a href="mailto:hello@tetianaparker.com">Contact</a></nav>
@@ -145,8 +174,8 @@ footer p+p:before{content:"·";margin-right:14px;color:var(--gold)}
 <div class="lb" id="lb" aria-hidden="true"><button class="x" aria-label="Close">&times;</button><button class="pv" aria-label="Previous">&lsaquo;</button><img alt=""><p></p><button class="nx" aria-label="Next">&rsaquo;</button></div>
 <script>
 function fit(){var r=document.documentElement,h=300;r.style.setProperty('--ch',h+'px');
-var pg=document.querySelector('.page'),cs=getComputedStyle(document.body),over=pg.offsetHeight+parseFloat(cs.marginTop)+parseFloat(cs.marginBottom)-innerHeight;h=Math.round(Math.min(innerWidth<900?400:520,Math.max(innerWidth<900?150:150,h-over-2)));r.style.setProperty('--ch',h+'px')}
-fit();addEventListener('resize',fit);addEventListener('load',fit);if(document.fonts)document.fonts.ready.then(fit);
+var pg=document.querySelector('.page'),cs=getComputedStyle(document.body),over=pg.offsetHeight+parseFloat(cs.marginTop)+parseFloat(cs.marginBottom)-innerHeight;h=Math.round(Math.min(innerWidth<900?560:720,Math.max(innerWidth<900?150:150,h-over-1)));r.style.setProperty('--ch',h+'px')}
+fit();addEventListener('resize',fit);if(window.visualViewport)visualViewport.addEventListener('resize',fit);addEventListener('load',fit);if(document.fonts)document.fonts.ready.then(fit);
 document.querySelectorAll('.libwrap').forEach(function(w){
 var l=w.querySelector('.lib');
 w.querySelector('.arr.l').onclick=function(){l.scrollBy({left:-l.clientWidth*.75,behavior:'smooth'})};
