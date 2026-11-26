@@ -163,7 +163,7 @@ h1{line-height:36px}
 <button class="arr l" aria-label="Previous">&lsaquo;</button>
 <div class="lib">
 <!--GALLERY-->
-<a class="card" href="com_v_shasta.jpg"><img src="com_r_shasta.jpg" alt="Shasta Daisy" loading="lazy"><span>Shasta Daisy</span></a>
+<a class="card" href="com_v_shasta.jpg?v=4"><img src="com_r_shasta.jpg" alt="Shasta Daisy" loading="lazy"><span>Shasta Daisy</span></a>
 <a class="card" href="com_v_fmn.jpg"><img src="com_r_fmn.jpg" alt="Forget Me Not" loading="lazy"><span>Forget Me Not</span></a>
 <a class="card" href="com_v_swp.jpg"><img src="com_r_swp.jpg" alt="Sweet Pea" loading="lazy"><span>Sweet Pea</span></a>
 <a class="card" href="com_v_cos.jpg"><img src="com_r_cos.jpg" alt="Cosmos" loading="lazy"><span>Cosmos</span></a>
@@ -211,7 +211,7 @@ lb.addEventListener('touchend',function(e){if(x0===null)return;var d=e.changedTo
 fetch('/',{cache:'no-cache'}).then(function(r){return r.text()}).then(function(t){
 var d=new DOMParser().parseFromString(t,'text/html'),cs=d.querySelectorAll('.lib .card');if(!cs.length)return;var h='';
 [].forEach.call(cs,function(c){var im=c.querySelector('img'),n=((c.querySelector('span')||{}).textContent||im.alt).trim(),k=K[n.toLowerCase()],e=n.replace(/[&<>"]/g,function(m){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]});
-h+=k?'<a class="card" href="com_v_'+k+'.jpg"><img src="com_r_'+k+'.jpg" alt="'+e+'" loading="lazy"><span>'+e+'</span></a>':'<a class="card" href="'+c.getAttribute('href')+'"><img src="'+im.getAttribute('src')+'" alt="'+e+'" loading="lazy"><span>'+e+'</span></a>'});
+h+=k?'<a class="card" href="com_v_'+k+'.jpg'+(k=='shasta'?'?v=4':'')+'"><img src="com_r_'+k+'.jpg" alt="'+e+'" loading="lazy"><span>'+e+'</span></a>':'<a class="card" href="'+c.getAttribute('href')+'"><img src="'+im.getAttribute('src')+'" alt="'+e+'" loading="lazy"><span>'+e+'</span></a>'});
 lib.innerHTML=h;if(window.fit)fit()}).catch(function(){})})();
 </script>
 </body>
