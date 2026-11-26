@@ -207,7 +207,7 @@ lb.addEventListener('touchend',function(e){if(x0===null)return;var d=e.changedTo
 })();
 </script>
 <script>
-(function(){var K={"forget me not": "fmn", "sweet pea": "swp", "cosmos": "cos", "bluebell": "bbl", "buttercup": "btc", "lavender": "lav", "cornflower": "cfl", "gerbera daisy": "gerb", "oxeye daisy": "daisy", "iceland poppy": "ice", "california poppy": "cal", "red corn poppy": "corn"},lib=document.querySelector('.lib');
+(function(){var K={"shasta daisy": "shasta", "forget me not": "fmn", "sweet pea": "swp", "cosmos": "cos", "bluebell": "bbl", "buttercup": "btc", "lavender": "lav", "cornflower": "cfl", "gerbera daisy": "gerb", "oxeye daisy": "daisy", "iceland poppy": "ice", "california poppy": "cal", "red corn poppy": "corn"},lib=document.querySelector('.lib');
 fetch('/',{cache:'no-cache'}).then(function(r){return r.text()}).then(function(t){
 var d=new DOMParser().parseFromString(t,'text/html'),cs=d.querySelectorAll('.lib .card');if(!cs.length)return;var h='';
 [].forEach.call(cs,function(c){var im=c.querySelector('img'),n=((c.querySelector('span')||{}).textContent||im.alt).trim(),k=K[n.toLowerCase()],e=n.replace(/[&<>"]/g,function(m){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]});
